@@ -1,7 +1,8 @@
 package com.musica.catalogo.repository;
 
+import com.musica.catalogo.model.Vinilo;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+
 
 /*
 * JpaRepository expose common database methods like find by Id, find all, delete, add.....
@@ -11,6 +12,6 @@ import org.springframework.stereotype.Repository;
 * framework through classpath scanning. Spring Repository is very close to DAO pattern where DAO classes are responsible for providing CRUD operations
 * on database tables. However, if you are using Spring Data for managing database operations, then you should use Spring Data Repository interface.
 * */
-@Repository
-public interface RecordRepository extends JpaRepository <Record, Long>{
+
+public interface ViniloRepository extends JpaRepository <Vinilo, Long>{
 }
