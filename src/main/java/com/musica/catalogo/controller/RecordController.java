@@ -30,6 +30,11 @@ public class RecordController {
         return viniloRepository.findAll();
     }
 
+    /*
+    The @RequestBody annotation is applicable to handler methods of Spring controllers.
+    This annotation indicates that Spring should deserialize a request body into an object.
+    This object is passed as a handler method parameter.
+    */
     @PostMapping(value = "/guardarvinilo")
     public String saveTask(@RequestBody Vinilo vinilo){
         viniloRepository.save(vinilo);
